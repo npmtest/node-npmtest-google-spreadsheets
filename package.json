@@ -1,1 +1,40 @@
-{     "devDependencies": {         "google-spreadsheets": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-google-spreadsheets",     "homepage": "https://github.com/npmtest/node-npmtest-google-spreadsheets",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-google-spreadsheets.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [google-spreadsheets (v0.5.1)](https://github.com/samcday/node-google-spreadsheets)  [![npm package](https://img.shields.io/npm/v/npmtest-google-spreadsheets.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-google-spreadsheets) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-google-spreadsheets.svg)](https://travis-ci.org/npmtest/node-npmtest-google-spreadsheets)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "google-spreadsheets": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-google-spreadsheets",
+    "keywords": [
+        "coverage",
+        "test",
+        "google-spreadsheets"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_google_spreadsheets.js",
+    "name": "npmtest-google-spreadsheets",
+    "nameAlias": "npmtest_google_spreadsheets",
+    "nameOriginal": "npmtest-google-spreadsheets",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-google-spreadsheets.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
