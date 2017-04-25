@@ -1,6 +1,6 @@
 # npmtest-google-spreadsheets
 
-#### test coverage for  [google-spreadsheets (v0.5.1)](https://github.com/samcday/node-google-spreadsheets)  [![npm package](https://img.shields.io/npm/v/npmtest-google-spreadsheets.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-google-spreadsheets) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-google-spreadsheets.svg)](https://travis-ci.org/npmtest/node-npmtest-google-spreadsheets)
+#### basic test coverage for  [google-spreadsheets (v0.5.1)](https://github.com/samcday/node-google-spreadsheets)  [![npm package](https://img.shields.io/npm/v/npmtest-google-spreadsheets.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-google-spreadsheets) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-google-spreadsheets.svg)](https://travis-ci.org/npmtest/node-npmtest-google-spreadsheets)
 
 #### Google Spreadsheet Data API for Node.js
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-google-spreadsheets/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-google-spreadsheets/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-google-spreadsheets/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-google-spreadsheets/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-google-spreadsheets/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-google-spreadsheets/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-google-spreadsheets/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-google-spreadsheets/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-google-spreadsheets/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-google-spreadsheets/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-google-spreadsheets/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-google-spreadsheets/build/coverage.html/index.html)
 
@@ -94,7 +94,8 @@
         "build": "browserify --standalone Spreadsheets lib/spreadsheets.js -o lib/spreadsheets.browser.js && uglifyjs lib/spreadsheets.browser.js -o lib/spreadsheets.browser.min.js",
         "test": "istanbul test _mocha"
     },
-    "version": "0.5.1"
+    "version": "0.5.1",
+    "bin": {}
 }
 ```
 
